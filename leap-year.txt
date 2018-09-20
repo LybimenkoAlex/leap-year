@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class SecondProg {
+    public static void main(String[] args) {
+        int year;
+        //System.out.print("Введите год, который хотите проверить: ");
+        //Scanner god = new Scanner(System.in);
+        //int year = god.nextInt();
+        if (year % 4 == 0 && year % 100 != 0 && year % 400 != 0) {
+            System.out.println("Год " + year + " - високосный");
+        }
+        else {
+            System.out.println("Год " + year + " не является високосным");
+        }
+    }
+}
+
+/**Второй способ
+public class SecondProg {
+    public static void main(String[] args) {
+        int year;
+        //System.out.print("Введите год, который хотите проверить: ");
+        //Scanner god = new Scanner(System.in);
+        //int year = god.nextInt();
+        boolean four = year % 4 == 0;
+        boolean hund = year % 100 != 0;
+        boolean fhund = year % 400 != 0;
+        if (four && hund && fhund) {
+            System.out.println("Високосный");
+        }
+        else {
+            System.out.println("Не високосный");
+        }
+    }
+}
+*/
