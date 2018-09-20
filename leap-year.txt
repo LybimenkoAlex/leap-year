@@ -15,7 +15,8 @@ public class SecondProg {
     }
 }
 
-/**Второй способ
+
+/** Второй способ;
 public class SecondProg {
     public static void main(String[] args) {
         int year;
